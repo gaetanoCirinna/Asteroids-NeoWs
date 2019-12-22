@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+}
+body {
+  overflow: hidden;
+  background: rgb(10, 29, 25);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 29, 25, 1) 0%,
+    rgba(24, 65, 89, 1) 86.84%,
+    rgba(25, 67, 93, 1) 100%
+  );
+}
+.content {
+  padding: 30px;
+}
+
+.App {
+  padding: 30px;
+}
+@import "./components/Main/Main.scss";
+
+@keyframes example {
+  from {
+    background: #2af598;
+    border: none;
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+    background-color: transparent;
+    border: 1px solid #2af598;
+  }
+}

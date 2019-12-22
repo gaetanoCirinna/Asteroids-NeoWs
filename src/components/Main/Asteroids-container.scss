@@ -1,0 +1,84 @@
+.asteroids-container {
+  color: #fff;
+  height: 100%;
+  .main-title {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 27px;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.coso {
+  width: 100%;
+  float: left;
+  margin-top: 80px;
+  padding: 80px;
+  padding-top: 0;
+  padding-left: 0;
+}
+.prova {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  float: left;
+  span {
+    animation-name: example;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    cursor: pointer;
+    .dot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-sizing: border-box;
+      height: 3px;
+      width: 3px;
+      border: 1px solid #2af598;
+      background-color: #2af598;
+      box-shadow: 0 0 8px 0 rgba(42, 245, 152, 0.6);
+    }
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #2af598;
+    background: radial-gradient(
+      circle,
+      rgba(42, 245, 152, 0) 0%,
+      rgba(42, 245, 152, 0.03) 48.36%,
+      rgba(42, 245, 152, 0.06) 100%
+    );
+    box-shadow: 0 0 8px 0 rgba(42, 245, 152, 0.6);
+    border-radius: 50%;
+    margin: 30px;
+
+    &:hover {
+      background-color: #2af598;
+      transition: all 0.4s ease-out;
+      &::after {
+        transition: all 0.4s ease-out;
+        content: attr(data-value);
+        position: absolute;
+        padding: 15px;
+        top: 50%;
+        left: 50%;
+        box-sizing: border-box;
+        height: auto;
+        width: auto;
+        font-size: 0.8rem;
+        border: 1px solid #979797;
+        background: linear-gradient(
+          180deg,
+          #0a1d19 0%,
+          #184159 86.84%,
+          #19435d 100%
+        );
+      }
+    }
+  }
+}

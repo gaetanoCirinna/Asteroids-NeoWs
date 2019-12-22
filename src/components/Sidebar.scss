@@ -1,0 +1,108 @@
+.sidebar {
+  padding: 45px;
+  padding-top: 0;
+
+  height: 100%;
+  h1 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 27px;
+  }
+  h2 {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    line-height: 18px;
+
+    margin-top: 40px;
+    span {
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 100;
+      letter-spacing: 0.5px;
+      line-height: 18px;
+    }
+  }
+  &-rect-content {
+    p {
+      color: #ffffff !important;
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      line-height: 18px;
+      display: inline-block;
+      margin-left: 15px;
+    }
+  }
+  &-rect {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #ffffff;
+    transform: rotate(-45deg);
+    background-color: #d8d8d8;
+    border: 1px solid #fff;
+    &--empty {
+      border: 1px solid #ffffff;
+      background-color: transparent !important;
+    }
+  }
+  &-list {
+    color: #fff;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    margin-top: 60px;
+    &__content {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+    &__text {
+      display: inline-block;
+      margin-left: 30px;
+      float: left;
+      p {
+        font-size: 13px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        line-height: 18px;
+      }
+    }
+
+    &__rect {
+      float: left;
+      display: inline-block;
+      transform: rotate(-45deg);
+      background-color: #ffffff;
+      position: relative;
+      animation-name: objBright;
+      animation-duration: 1.2s;
+      animation-timing-function: ease-out;
+      @keyframes objBright {
+        from {
+          transform: scale(0);
+          transform: rotate(0deg);
+          background-color: transparent;
+        }
+        to {
+          transform: scale(1);
+          transform: rotate(-45deg);
+          background-color: #ffffff;
+        }
+      }
+      .dot {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 2px;
+        width: 2px;
+        background-color: #091d19;
+      }
+    }
+  }
+}
